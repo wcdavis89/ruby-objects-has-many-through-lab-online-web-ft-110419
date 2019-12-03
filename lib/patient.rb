@@ -21,8 +21,11 @@ class Patient
   def appointments
     # binding.pry
      @@appts=[]
-    Appointment.all.select {|appointment| appointment.patient == self 
-    @@appts << appointment}
+    Appointment.all.select do |appointment| 
+      if appointment.patient == self do
+        @@appts << appointment
+      end
+    end
   end
 
   def doctors
