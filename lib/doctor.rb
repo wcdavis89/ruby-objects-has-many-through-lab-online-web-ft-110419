@@ -18,7 +18,7 @@ class Doctor
     Appointment.new(patient, self, date)
   end
 
-  def appointments
+  def self.appointments
     # binding.pry
     Appointment.all.select {|appointment| appointment.doctor == self}
   end
