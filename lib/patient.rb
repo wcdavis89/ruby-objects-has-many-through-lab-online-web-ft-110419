@@ -19,6 +19,7 @@ class Patient
   end
 
   def appointments
+    binding.pry
     Appointment.all.select {|appointment| appointment.patient == self}
   end
 
