@@ -27,6 +27,7 @@ class Patient
       end
       @@appts
     end
+  end
   
 
   def doctors
