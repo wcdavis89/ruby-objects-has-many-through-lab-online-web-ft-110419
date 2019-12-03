@@ -20,7 +20,7 @@ class Doctor
 
   def appointments
     # binding.pry
-    Appointment.all.select {|appointment| appointment.doctor == self.name}
+    Appointment.all.select {|appointment| appointment.doctor == self}
   end
 
   def patients
