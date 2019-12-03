@@ -25,8 +25,9 @@ class Patient
       if appointment.patient == self do
         @@appts << appointment
       end
+      @@appts
     end
-  end
+  
 
   def doctors
     Appointment.all.map do |appointment|
